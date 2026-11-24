@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "oracleCloudPlmReadOnly": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "mcp-server",
+        "oracle-cloud-plm-mcp"
+      ],
+      "env": {
+        "ORACLE_PLM_BASE_URL": "${ORACLE_PLM_BASE_URL}",
+        "ORACLE_PLM_TOKEN": "${ORACLE_PLM_TOKEN}"
+      },
+      "tools": [
+        "get_plm_resource"
+      ]
+    }
+  }
+}
+
